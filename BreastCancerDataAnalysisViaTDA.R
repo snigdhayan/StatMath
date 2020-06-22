@@ -18,7 +18,7 @@ for (i in 1:n_samples) {
   my_list[[i]] <- calculate_homology(data_sample)
 }
 
-# compute wasserstein distance between samples
+# compute wasserstein distances between persistent homologies of samples
 distance_matrix <- matrix(nrow = n_samples, ncol = n_samples)
 for (row in 1:nrow(distance_matrix)) {
   for (col in 1:ncol(distance_matrix)) {
