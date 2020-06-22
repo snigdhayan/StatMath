@@ -1,4 +1,5 @@
 library(TDA)
+library(TDAstats)
 
 # read data
 setwd('/Users/ibatu/Documents/MyProgramsWindows/R/TopologicalDataAnalysis/')
@@ -22,7 +23,9 @@ for (i in 1:n_samples) {
 distance_matrix <- matrix(nrow = n_samples, ncol = n_samples)
 for (row in 1:nrow(distance_matrix)) {
   for (col in 1:ncol(distance_matrix)) {
-    distance_matrix[row,col]<- wasserstein(my_list[[row]],my_list[[col]], p = wasserstein_exp, dimension = wasserstein_dim)
+    distance_matrix[row,col] <- wasserstein(my_list[[row]],my_list[[col]], 
+                                            p = wasserstein_exp, 
+                                            dimension = wasserstein_dim)
   }
 }
 
