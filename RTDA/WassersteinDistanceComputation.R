@@ -7,7 +7,7 @@ data <- read.csv(file = 'breast_cancer_dataset.csv', header = TRUE)
 data <- data[names(data)!='label']
 
 # configuration parameters
-sample_size = 500 # select 500 data points or equivalently remove approx. 70 data points
+sample_size = 500 # select 500 data points or equivalently approx. 70 data points 
 n_samples = 5
 wasserstein_exp = 1
 wasserstein_dim = 0
