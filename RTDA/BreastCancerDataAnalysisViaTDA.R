@@ -2,12 +2,12 @@ library(TDA)
 library(TDAstats)
 
 # read data
-setwd('/Users/ibatu/Documents/MyProgramsWindows/R/TopologicalDataAnalysis/')
+setwd('/Users/ibatu/Documents/MyProgramsWindows/TopologicalDataAnalysis/RTDA/')
 data <- read.csv(file = 'breast_cancer_dataset.csv', header = TRUE)
 data <- data[names(data)!='label']
 
 # configuration parameters
-sample_size = 50
+sample_size = 500
 n_samples = 5
 wasserstein_exp = 1
 wasserstein_dim = 0
