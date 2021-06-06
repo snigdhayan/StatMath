@@ -1,7 +1,8 @@
+# Load libraries
 library(ROI)
 library(ROI.plugin.alabama)
 
-# Model the whole problem as an NLP
+# Formulate the nonlinear problem
  
 #> Maximize a nonlinear objective function with 3 continuous variables: x2*x3 - x1*x3 + x1*x2
  
