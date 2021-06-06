@@ -3,7 +3,7 @@ library(ROI.plugin.alabama)
 
 # Model the whole problem as an NLP
  
-#> Maximize a nonlinear objective function with 3 continuous variables: x2*x3 - x1*x3 + X1*x2
+#> Maximize a nonlinear objective function with 3 continuous variables: x2*x3 - x1*x3 + x1*x2
  
 #> subject to 1 constraint of nonlinear type: x1 - 57*x1*x2 - 28*x2*x3 >= 50000
 
