@@ -2,7 +2,7 @@ library(TDA)
 library(TDAstats)
 
 # read data
-setwd('/Users/ibatu/Documents/MyProgramsWindows/Repositories/StatMath/TopologicalDataAnalysis/RTDA/')
+setwd('/Users/mathm/Documents/MyProgramsWindows/Repositories/StatMath/TopologicalDataAnalysis/RTDA/')
 data <- read.csv(file = 'breast_cancer_dataset.csv', header = TRUE)
 data <- data[names(data)!='label']
 
